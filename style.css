@@ -19,7 +19,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 2vw 2vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +27,7 @@ header {
 }
 
 .logo {
-    font-size: 2em;
+    font-size: 2vw;
     pointer-events: none;
     justify-content: left;
     color: white;
@@ -60,6 +60,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -75,7 +76,7 @@ header {
 
 #text {
     position: absolute;
-    font-size: 5em;
+    font-size: 4vw;
     color: #ffffff;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, .4);
 }
@@ -83,8 +84,6 @@ header {
 .parallax img {
     position: absolute;
     /* scale: 1; */
-    top: -45vh;
-    left: 0;
     width: 100%;
     /* height: 100%; */
     pointer-events: none;

@@ -5,6 +5,8 @@ let layer3 = document.getElementById('layer3')
 let layer4 = document.getElementById('layer4')
 let layer5 = document.getElementById('layer5')
 let layer6 = document.getElementById('layer6')
+let logo = document.getElementById('logo')
+// let navs = document.getElementsByClassName('navigation')
 // let layers = {layer1s, layer2, layer3, layer4, layer5, layer6};
 // const layers = document.querySelectorAll('.layer');
 
@@ -49,6 +51,11 @@ function updateLayers() {
   
 function handleScroll(e) {
     e.preventDefault();
+
+    // logo.classList.add(logo.offsetTop);
+    // navs.forEach((nav) => {
+    //     nav.style.top = scrollPos;
+    // });
 
     if (e.deltaY > 0) {
         scrollPos += 0.05;

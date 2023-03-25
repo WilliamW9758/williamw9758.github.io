@@ -1,4 +1,5 @@
 let text = document.getElementById('text')
+let thc = document.getElementById('tbc')
 let layer1 = document.getElementById('layer1')
 let layer2 = document.getElementById('layer2')
 let layer3 = document.getElementById('layer3')
@@ -13,32 +14,37 @@ let logo = document.getElementById('logo')
 let scrollPos = 0;
 
 function updateLayers() {
-    const scaleFactor0 = 0.8 * scrollPos;
+    const scaleFactor0 = 1.2 * scrollPos;
     const opacityFactor0 = 1 - scrollPos * 0.9
     text.style.scale = 1 + scaleFactor0;
     text.style.opacity = opacityFactor0;
 
-    const scaleFactor1 = 0.8 * scrollPos;
+    const scaleFactor1 = 1.2 * scrollPos;
     const opacityFactor1 = 1 - scrollPos * 0.9
     layer1.style.scale = 1 + scaleFactor1;
     layer1.style.opacity = opacityFactor1;
     // layer1.style.boxShadow = '${scaleFactor}px 0 0 #f00';
     // layer1.style.transform = "rotate(calc(var(--rotate-angle, 0deg) * 1deg))";
     
-    const scaleFactor2 = 0.2 * scrollPos;
+    const scaleFactor2 = 0.6 * scrollPos;
     const opacityFactor2 = 2 - scrollPos * 0.5
     layer2.style.scale = 1 + scaleFactor2;
     layer2.style.opacity = opacityFactor2;
 
-    const scaleFactor3 = 0.05 * scrollPos;
-    const opacityFactor3 = 3 - scrollPos * 0.5
+    const scaleFactor3 = 0.3 * scrollPos;
+    const opacityFactor3 = 4 - scrollPos * 0.5
     layer3.style.scale = 1 + scaleFactor3;
     layer3.style.opacity = opacityFactor3;
 
+    const scaleFactor5 = 0.1 * scrollPos;
+    const opacityFactor5 = scrollPos * 0.5 - 2
+    tbc.style.scale = 1 + scaleFactor5;
+    tbc.style.opacity = opacityFactor5;
+
     const scaleFactor4 = 0.01 * scrollPos;
-    const opacityFactor4 = 10 - scrollPos * 0.5
+    // const opacityFactor4 = 10 - scrollPos * 0.5
     layer4.style.scale = 1 + scaleFactor4;
-    layer4.style.opacity = opacityFactor4;
+    // layer4.style.opacity = opacityFactor4;
 
     // const scaleFactor5 = 0.05 * scrollPos;
     // layer5.style.scale = 1 + scaleFactor5;
